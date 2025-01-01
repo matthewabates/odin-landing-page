@@ -1,4 +1,195 @@
+/* fonts */
 body {
     font-family: Roboto
+}
+
+.header .primary {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;    
+}
+
+.hero .primary {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.links a,
+.hero .secondary
+{
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+button {
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: 900;    
+}
+
+.info .primary {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.info .secondary {
+    color: gray
+}
+
+.quote .actual {
+    font-size: 36px;
+    font-weight: lighter; /*not working*/
+    font-style: italic;    
+    color: #1F2937;
+}
+
+.quote .source {
+    font-size: 28px;
+    font-weight: bold; 
+    color: #1F2937
+}
+
+.call-to-action {
+    color: #F9FAF8;
+}
+
+.call-to-action .primary {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.footer {
+    color: #F9FAF8;
+}
+
+/* colors */
+
+.header, 
+.hero, 
+.footer {
+    background-color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.hero .image {
+    background-color: gray;
+}
+
+.info img {
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+}
+
+button, 
+.call-to-action {
+    background-color: #3882F6
+}
+
+.call-to-action button {
+    border: 2px solid #F9FAF8
+}
+
+/* positioning */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.page > div {
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header .links {
+    gap: 20px;
+}
+
+.page .hero {
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero .image {
+    flex-basis: 100%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .secondary {
+    padding-bottom: 10px
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: center;
+    justify-content: center;
+}
+
+.info .primary {
+    padding-bottom: 30px;
+}
+
+.info .images {
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info .images > div {
+    width: 150px;
+}
+
+.page .quote {
+    padding: 80px 300px;
+}
+
+.quote .source {
+    text-align: right;
+}
+
+.page .call-to-action {
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 50px 100px;
+}
+
+.footer {
+    text-align: center;
 }
 
